@@ -18,6 +18,6 @@ export function useCompanies() {
     queryFn: getCompanies,
     refetchInterval: 5000,// temp for poling later we can replace for api optimization 
     refetchOnWindowFocus: true,
-    staleTime: 1000 * 30,
+    staleTime: 0,
   });
 }
