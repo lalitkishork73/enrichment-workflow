@@ -1,22 +1,23 @@
-'use client'
+"use client";
 
-import { useQuery } from '@tanstack/react-query'
-import { getCompanies } from '../api'
+import { useQuery } from "@tanstack/react-query";
+import { getCompanies } from "../api";
 
 export type Company = {
-  id: string
-  domain: string
-  industry: string | null
-  company_size: string | null
-  revenue_range: string | null
-  status: string
-}
+  id: string;
+  domain: string;
+  industry: string | null;
+  company_size: string | null;
+  revenue_range: string | null;
+  status: string;
+};
 
 export function useCompanies() {
   return useQuery<Company[]>({
-    queryKey: ['companies'],
+    queryKey: ["companies"],
     queryFn: getCompanies,
+    refetchInterval: 5000,// temp for poling later we can replace for api optimization 
     refetchOnWindowFocus: true,
     staleTime: 1000 * 30,
-  })
+  });
 }
