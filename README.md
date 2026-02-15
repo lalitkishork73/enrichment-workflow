@@ -16,9 +16,9 @@ The system is designed with clean architecture, asynchronous processing, and con
 
 ### 🧪 Demo CSV
 
-You can use the following sample CSV to test the system:
+You can download the sample CSV to test the system:
 
-👉 https://raw.githubusercontent.com/lalitkishork73/HTML-games/main/domain.csv
+👉 **[Download Demo CSV](https://raw.githubusercontent.com/lalitkishork73/HTML-games/main/domain.csv)**
 
 Upload this file from the frontend to see the enrichment pipeline in action.
 
