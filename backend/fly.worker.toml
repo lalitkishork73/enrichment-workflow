@@ -1,0 +1,10 @@
+app = "lalit-enrichment-worker"
+primary_region = "bom"
+
+[build]
+
+[processes]
+  worker = "python worker.py"
+
+[[vm]]
+  size = "shared-cpu-1x"
